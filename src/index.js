@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import "./index.css";
-import App from "../containers/App";
 import store from "./store";
 const render = () => {
   fancyLog();
