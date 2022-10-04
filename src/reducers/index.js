@@ -2,6 +2,7 @@
 import user from "./User";
 import contacts from "./contacts";
 import { combineReducers } from "redux";
+import activeUserId from "./activeUserId";
 
 //import helper function(combineReducers) for combining the reducers
 // both reducers will be imported like this
@@ -11,5 +12,6 @@ import { combineReducers } from "redux";
 });*/
 export default combineReducers({
     user,
-    contacts
+    contacts,
+    activeUserId
 });

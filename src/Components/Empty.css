@@ -1,0 +1,40 @@
+.Empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Empty__name {
+    color: #fff;
+}
+
+.Empty__status,
+.Empty__info {
+    padding: 1rem;
+}
+
+.Empty__status {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.Empty__img {
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+.Empty__btn {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    outline: 0;
+}
+
+.Empty__btn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
