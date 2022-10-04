@@ -1,7 +1,6 @@
 import React from "react";
-// import User from "./User";
-import "./Sidebar.css";
 import User from "../Containers/User";
+import "./Sidebar.css";
 
 const Sidebar = ({ contacts }) => {
   return (
@@ -10,4 +9,5 @@ const Sidebar = ({ contacts }) => {
     </aside>
   );
 };
+
 export default Sidebar;
