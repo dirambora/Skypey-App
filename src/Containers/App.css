@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700");
+
 .App {
   height: 100%;
   display: flex;
   color: rgba(189, 189, 192, 1);
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
 }

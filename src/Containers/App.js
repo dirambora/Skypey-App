@@ -1,14 +1,13 @@
-import React from 'react';
-import "./App.css";
-import Sidebar from "../Components/Sidebar";
-import Main from "../Components/Main";
+import React from "react";
 import _ from "lodash";
-import store from '../store';
-import activeUserId from '../reducers/activeUserId';
+import Sidebar from "../components/Sidebar";
+import Main from "../components/Main";
+import store from "../store";
+import "./App.css";
 
 const App = () => {
+  const { contacts, user, activeUserId } = store.getState();
 
-  const {contacts,user,activeUserId} =store.getState();
   return (
     <div className="App">
       <Sidebar contacts={_.values(contacts)} />
@@ -16,5 +15,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;

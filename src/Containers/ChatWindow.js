@@ -1,20 +1,24 @@
 import React from "react";
-import store from "../store";
 import Header from "../components/Header";
-import Chats from "../Components/Chats";
+import MessageInput from "./MessageInput";
+
+import store from "../store";
+import Chats from "../components/Chats";
 import _ from "lodash";
+import "./ChatWindow.css";
 
 const ChatWindow = ({ activeUserId }) => {
-  //grab the state from reduux store
   const state = store.getState();
-  //To keep track of the active user, a new variable, activeUser is created, and the value is retrieved from the state object like this:
   const activeUser = state.contacts[activeUserId];
-  const activeMsgs =state.messages[activeUserId];
+  const activeMsgs = state.messages[activeUserId];
+  const { typing } = state;
+
   return (
     <div className="ChatWindow">
       <Header user={activeUser} />
-      {/* render the list of messages */}
       <Chats messages={_.values(activeMsgs)} />
+      <MessageInput value={typing} />
+
     </div>
   );
 };

@@ -1,19 +1,15 @@
-//combine the reducers in here
-import user from "./User";
-import contacts from "./contacts";
-import messages from "./messages";
 import { combineReducers } from "redux";
+import user from "./user";
+import contacts from "./contacts";
 import activeUserId from "./activeUserId";
+import messages from "./messages";
+import typing from "./typing";
 
-//import helper function(combineReducers) for combining the reducers
-// both reducers will be imported like this
-/*export default combineReducers({
-    user,
-    contacts,
-});*/
+
 export default combineReducers({
-    user,
-    messages,
-    contacts,
-    activeUserId
+  user,
+  contacts,
+  messages,
+  typing,
+  activeUserId
 });

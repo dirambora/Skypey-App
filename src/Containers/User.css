@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   padding: 1rem;
+  position: relative;
 }
 
 .User:hover {
@@ -18,14 +19,13 @@
   display: none;
 }
 
-/* not small devices  */
-
-.User__details {
-  display: none;
+.User__closeIcon {
+  position: absolute;
+  top: 2px;
+  right: 5px;
 }
 
-/* not ig devices  */
-
+/* not small devices  */
 @media (min-width: 576px) {
   .User__details {
     display: block;
